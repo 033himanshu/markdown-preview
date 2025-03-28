@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px;
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover  {
+    background: #555; 
+}
+header{
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    background-color: black;
+    color : white;
+}
+.container{
+    display: flex;
+    height: calc(100vh - 100px);
+    padding: 5px 10px;
+    gap: 5px;
+}
+.input{
+    padding: 5px;
+    resize: none;
+    outline: 0;
+    width: 100%;
+    height: 100%;
+    font-size: large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    /* background-color: black;
+    color : white; */
+}
+.preview{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    /* background-color: black;
+    color : white; */
+    overflow: auto;
+}
+.preview ul, ol{
+    margin-left: 20px;
+}
+.preview a{
+    color : blue;
+}
+.preview h1, h2, h3, h4, h5, h6{
+    margin: 5px 0;
+}
+@media only screen and (max-width:720px){
+    .container{
+        flex-direction: column;
+    }
+}
+
+.code{
+    margin: 10px;
+    font-size: large;
+    color : white;
+    background-color: rgb(61, 61, 61);
+    border-radius: 20px;
+    overflow: auto;
+}
+.code .title{
+    padding: 10px;
+    font-weight: 700;
+    background-color: #111111;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.code pre{
+    padding : 10px 20px;
+    font-style: italic;
+    word-wrap:break-word;
+}
+.controllers{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap : 10px;
+}  
+.controllers button{
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    color : white;
+    border: none;
+}
+.controllers .reset{
+    background-color: rgb(221, 0, 0);
+}
+.controllers .download{
+    background-color: rgb(4, 71, 255);
+}
+
+.preview img{
+    width: 100%;
+    border-radius: 10px;
+    margin: 5px;
+}
